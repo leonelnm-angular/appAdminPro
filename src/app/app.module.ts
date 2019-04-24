@@ -4,11 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 
-// Rutas
-import { AppRoutingModule } from './app.routes';
-import { PagesComponent } from './pages/pages.component';
+
 import { RegisterComponent } from './login/register.component';
 import { PagesModule } from './pages/pages.module';
+import { AppRoutingModule } from './app-routing.routes';
 
 @NgModule({
   declarations: [
@@ -18,8 +17,8 @@ import { PagesModule } from './pages/pages.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     PagesModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
