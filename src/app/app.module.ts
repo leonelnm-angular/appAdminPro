@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-
-
 import { RegisterComponent } from './login/register.component';
+
+// Módulos propios
 import { PagesModule } from './pages/pages.module';
-import { AppRoutingModule } from './app-routing.routes';
+
+// Rutas
+import { AppRoutingModule } from './app.routes';
 
 @NgModule({
   declarations: [
