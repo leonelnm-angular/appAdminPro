@@ -11,6 +11,8 @@ import { PagesModule } from './pages/pages.module';
 // Rutas
 import { AppRoutingModule } from './app.routes';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +22,7 @@ import { AppRoutingModule } from './app.routes';
   imports: [
     BrowserModule,
     PagesModule,
+    FormsModule,    
     AppRoutingModule,
   ],
   providers: [],
