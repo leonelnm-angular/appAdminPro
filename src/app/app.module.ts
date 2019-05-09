@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -11,7 +12,9 @@ import { PagesModule } from './pages/pages.module';
 // Rutas
 import { AppRoutingModule } from './app.routes';
 
-import { FormsModule } from '@angular/forms';
+// Servicios
+import { ServiceModule } from './services/service.module';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +26,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     PagesModule,
     FormsModule,    
+    ServiceModule,
     AppRoutingModule,
   ],
   providers: [],
