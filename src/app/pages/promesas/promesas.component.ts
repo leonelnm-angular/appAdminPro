@@ -9,6 +9,10 @@ export class PromesasComponent implements OnInit {
 
   constructor() {
 
+    this.contarTres().then(
+      resp => console.log(resp)
+    );
+
   }
 
   ngOnInit() {
